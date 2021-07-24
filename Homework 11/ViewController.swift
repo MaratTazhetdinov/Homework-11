@@ -8,10 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var buttons: [UIButton]!
+    @IBOutlet var zeroButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+
+
+        for button in buttons {
+            button.layer.cornerRadius = button.frame.size.height / 2.2
+        }
+        
+        zeroButton.layer.cornerRadius = zeroButton.frame.size.width / 4.5
+        
     }
 
 
