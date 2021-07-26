@@ -15,14 +15,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-
         for button in buttons {
-            button.layer.cornerRadius = button.frame.size.height / 2.2
+            button.layer.cornerRadius = button.frame.size.height / 2.0
         }
-        
         zeroButton.layer.cornerRadius = zeroButton.frame.size.width / 4.5
-        
     }
 
 
